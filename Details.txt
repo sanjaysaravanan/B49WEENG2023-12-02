@@ -1,0 +1,74 @@
+
+
+Topics:
+
+  1. Frontend:
+      the module which user will interact, html, css, js
+      makes request to the some private or public APIs 
+      which will give the contents to rendered
+
+    API --> Application Programming Interface
+
+     Backend:
+      system which lets us communicate with Database for doing CRUD operations
+
+      Why need a backend system:
+        separating the Front-end layer and data layer
+        ease of data maniupulation and in-memory access ( which is not possible in browser )
+        secure querying of the data layer
+
+  2. what is nodejs:
+    
+    nodejs is a js runtime environment, where we can execute js without web browser
+
+    running js file in nodejs environment:
+      cannot access window functions/attributes like alert, document because they can only be used in web browser
+
+    global var --> console.log(global);
+
+    command line arguements
+      - process.argv
+        custom arguements should be taken from second index value
+      - Getting Inputs from CMD line arguements
+  
+  3. inbuilt module/package as utility
+      - OS - operating system
+        reading memory and system info
+      - fs - file system
+        create new files in the file system
+        create files using for loop
+        readFile with and without encoding
+        appendFile and appendFile with newline
+        deletefile - unlink
+
+      Timestamp or Date Formats in file content
+        Timestamp:
+          Date.now(); // timestamp
+
+        Date Time:
+          Date().toString(); // Date format ( Sat Dec 02 2023 12:07:57 GMT+0530 (India Standard Time) )
+          new Date().toISOString(); // Date format ( 2023-12-02T06:38:44.231Z )
+
+  4. using external third party library,
+
+      in nodejs, in order to use the third party library from open source.
+      npm init -> create a new node project where we can install third party packages
+      We need a npm project with the packages under dependency
+
+      what is npm -> node package manager ( like play store ), 
+      node_modules ( executable( moduled js )/binary of the third party packages )
+      
+      examples:
+        lodash, express ( next session )
+    
+    Intro Post-Man
+
+Task:
+  Download Post-Man
+
+Next Session:
+  ES module, Common Js
+  express - web framework http server applcation which lets us create APIs
+      and use those APIs in our application
+
+      sample API using express
